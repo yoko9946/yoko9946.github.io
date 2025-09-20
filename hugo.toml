@@ -1,0 +1,68 @@
+
+baseURL = "https://yoko9946.github.io/"
+languageCode = "en-us"
+title = "Carrie’s Portfolio"
+theme = "PaperMod"
+
+[params]
+author = "Carrie Lai"
+# info = "Welcome to my portfolio! I'm always growing, exploring and updating, so I hope you'll visit again! :)"
+
+showReadingTime = true
+showPostNavLinks = true
+defaultTheme = "light"
+
+#description = "My personal blog and portfolio"
+#dateFormat = "January 2, 2006"
+# avatarURL = "/images/Carrie.jpg"
+
+mainSections = ["plasma", "ai-cfd", "satellite","additive-manufacturing","aircraft","rocket"]
+
+
+[[params.social]]
+name = "GitHub"
+icon = "fa fa-github"
+weight = 1
+url = "https://github.com/yourusername"
+
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+name = "Plasma"
+url = "/plasma/"
+weight = 2
+
+[[menu.main]]
+name = "AI + CFD"
+url = "/ai-cfd/"
+weight = 3
+
+[[menu.main]]
+name = "Rocket"
+url = "/rocket/"
+weight = 4
+
+[[menu.main]]
+name = "Satellite"
+url = "/satellite/"
+weight = 5
+
+[[menu.main]]
+name = "Aircraft"
+url = "/aircraft/"
+weight = 6
+
+[[menu.main]]
+name = "Additive Manufacturing"
+url = "/additive-manufacturing/"
+weight = 7
+
+
+[[menu.main]]
+name = "Resume"
+url = "/resume/"
+weight = 8

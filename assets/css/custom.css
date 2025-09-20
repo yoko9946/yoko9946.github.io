@@ -1,0 +1,11 @@
+div.avatar {
+  border-radius: 0 !important;                /* makes it square */
+  background-size: contain !important;        /* prevents zoom cropping */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 200px !important;                    /* or any size you prefer */
+  height: 200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-shadow: none !important;
+}

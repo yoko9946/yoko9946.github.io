@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hi everyone, I am Carrie on Carrie’s Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Hi everyone, I am Carrie on Carrie’s Portfolio</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resume</title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/</guid>
+      <description>&lt;p&gt;Here is my full resume in PDF form. You can view or download it below:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/files/resume.pdf&#34;&gt;📄 Download Resume&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 17 Jul 2025 14:09:13 -0400</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi everyone, I’m Carrie Lai. My journey through aerospace has been grounded in physics and shaped by simulation-driven work in fluid and plasma dynamics as well as rocket propulsion systems. During my M.S. in Aerospace Engineering at the University of Southern California, I focused on computational modeling, where I deepened my expertise in Python and C++, developing simulation tools and numerical models to study complex fluid and plasma behavior in both space and combustion systems. This summer, I join a NASA-funded research project at the University of Michigan, where I help process large-scale particle data from the NASA Pleiades Supercomputer to simulate electron velocity distributions associated with Bursty Bulk Flows (~10 minutes, ~400 km/s) in the magnetotail region of Earth’s magnetosphere.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PICing the Flame! How Plasma Sparks Combustion?</title>
+      <link>http://localhost:1313/plasma/my-first-project/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/plasma/my-first-project/</guid>
+      <description>&lt;h3 id=&#34;how-it-began&#34;&gt;&lt;strong&gt;How It Began:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;In the summer of 2024, I met &lt;strong&gt;Prof. Paul Ronney&lt;/strong&gt;, chair of the USC Aerospace &amp;amp; Mechanical Engineering department, and joined his lab working with one of his PhD students. This was my first step into the &lt;strong&gt;Combustion Physics Lab&lt;/strong&gt;. That fall, I had the chance to attend the &lt;strong&gt;APS Gaseous Electronics Conference (San Diego, 2024)&lt;/strong&gt;, where I was first introduced to the world of plasma physics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DIY Mini CNC Laser Engraver</title>
+      <link>http://localhost:1313/additive-manufacturing/3dp/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/additive-manufacturing/3dp/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The objective of this project was to explore how additive manufacturing could enhance low-cost CNC systems by improving their functionality and accessibility. Through the use of 3D printed components, the work resulted in a stable and customizanle DIY CNC laser engraver.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;primary-components&#34;&gt;Primary Components&lt;/h3&gt;
+&lt;p&gt;The DIY Mini CNC Laser Engraver integrates a range of electronic, mechanical, and 3D printed
+components. Each part was selected for its functionality, accessibility and contribution to the overall system design.
+&lt;img alt=&#34;DIY CNC Laser Engraver&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/additive-manufacturing/pc.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI &#43; CFD!</title>
+      <link>http://localhost:1313/ai-cfd/cfd/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai-cfd/cfd/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;During this program, I gained hands-on experience in &lt;strong&gt;Computational Fluid Dynamics (CFD)&lt;/strong&gt;, spanning the fundamentals of PDEs, numerical methods, and solver development, and extending into parallel programming and AI-enhanced approaches. The curriculum provided both theoretical grounding and practical coding exercises.&lt;/p&gt;
+&lt;h2 id=&#34;learning-progression&#34;&gt;Learning Progression&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Python Foundations&lt;/strong&gt;&lt;br&gt;
+Reviewed Python basics and intermediate concepts as preparation for scientific programming.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CFD Fundamentals&lt;/strong&gt;&lt;br&gt;
+Explored governing equations (PDEs), the &lt;strong&gt;Finite Volume Method&lt;/strong&gt;, and grid generation techniques.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Electric Aircraft Project</title>
+      <link>http://localhost:1313/aircraft/ev/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aircraft/ev/</guid>
+      <description>Hybrid-electric distributed propulsion retrofit of a Cessna 310R, balancing sustainability, efficiency, and performance.</description>
+    </item>
+    <item>
+      <title>AIAA Design, Build and Fly Competition</title>
+      <link>http://localhost:1313/aircraft/dbf/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aircraft/dbf/</guid>
+      <description>Contributed to avionics development for a UAV in the AIAA DBF competition, focusing on flight control, motor selection, and sensor integration.</description>
+    </item>
+    <item>
+      <title>Autonomous Flight Systems Lab</title>
+      <link>http://localhost:1313/aircraft/afsl/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aircraft/afsl/</guid>
+      <description>Research with Prof. Christopher Lum on nonlinear 6-DOF modeling, simulation, and flight visualization.</description>
+    </item>
+    <item>
+      <title>🚀 Solid Rocket Motor Modeling! Internal Ballistics</title>
+      <link>http://localhost:1313/rocket/solid-rocket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rocket/solid-rocket/</guid>
+      <description>&lt;p&gt;This project developed Python-based computational tools to model solid rocket motor ignition, burn dynamics, thermal loading, and structural performance. The work integrated thermochemistry from NASA CEA, internal ballistics, and heat transfer modeling to address both flight motor performance prediction and insulation test motor evaluation.&lt;/p&gt;
+&lt;h3 id=&#34;technical-contributions&#34;&gt;&lt;strong&gt;Technical Contributions:&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;motor-performance&#34;&gt;&lt;strong&gt;Motor Performance&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Igniter Sizing &amp;amp; Thermal Modeling: Computed minimum igniter mass to achieve &amp;lt;50 ms ignition delay for ballistic test motors using thermal conduction equations, specific heat capacity, and target ignition surface temperature&lt;/li&gt;
+&lt;li&gt;Burn Profile Classification: Classified motor pressure trace type (progressive, regressive, neutral, etc.) from experimental data trends&lt;/li&gt;
+&lt;li&gt;Burn Rate vs. Pressure Calibration: Processed 9 static firing datasets of pressure–time traces, calculated rate-averaged pressure, and performed log–log regression to determine propellant burning rate parameters (a, n)&lt;/li&gt;
+&lt;li&gt;Grain Geometry &amp;amp; Nozzle Design: Designed propellant grain geometry and nozzle throat size to meet specified thrust requirements across multiple flight phases (Ignition, Max-Q, Sustain, Tailoff)&lt;/li&gt;
+&lt;li&gt;Simulation &amp;amp; Performance Validation: Modeled thrust and head-end pressure vs. time to verify compliance with customer specifications; established allowable burning rate tolerances to ensure thrust envelope is met&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;thermal--structural-analysis-of-insulation-test-motor&#34;&gt;&lt;strong&gt;Thermal &amp;amp; Structural Analysis of Insulation Test Motor&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal Ballistics Simulation: Developed and applied custom ballistics code to calculate time-resolved pressures, gas velocities, and mass fluxes at multiple motor stations for an insulation test section.&lt;/li&gt;
+&lt;li&gt;Structural Analysis: Determined case and dome wall thickness requirements using yield strength safety factor criteria; computed total case and dome mass&lt;/li&gt;
+&lt;li&gt;Thermal Protection System Design: Identified critical insulation zones outside the test section, selected insulation materials, and provided justification based on thermal loads and fabrication considerations&lt;/li&gt;
+&lt;li&gt;Nozzle Heat Transfer Modeling: Applied alternate Bartz equation to compute static temperature, wall recovery temperature, heat transfer coefficient, and heat flux distribution along nozzle cone at peak operating pressure&lt;/li&gt;
+&lt;li&gt;CEA Data Integration: Incorporated NASA CEA output into performance and heat transfer models to obtain thermophysical properties and expansion characteristics for AP/Al/HTPB propellant&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>2U &#43; 6U CubeSats</title>
+      <link>http://localhost:1313/satellite/cubesat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/satellite/cubesat/</guid>
+      <description>Conceptual 2U and 6U CubeSat design, ADCS modeling, and mission analysis.</description>
+    </item>
+  </channel>
+</rss>

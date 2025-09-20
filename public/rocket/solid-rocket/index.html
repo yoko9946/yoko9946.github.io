@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>🚀 Solid Rocket Motor Modeling! Internal Ballistics | Carrie’s Portfolio</title>
+<meta name="keywords" content="">
+<meta name="description" content="This project developed Python-based computational tools to model solid rocket motor ignition, burn dynamics, thermal loading, and structural performance. The work integrated thermochemistry from NASA CEA, internal ballistics, and heat transfer modeling to address both flight motor performance prediction and insulation test motor evaluation.
+Technical Contributions:
+Motor Performance
+
+Igniter Sizing &amp; Thermal Modeling: Computed minimum igniter mass to achieve &lt;50 ms ignition delay for ballistic test motors using thermal conduction equations, specific heat capacity, and target ignition surface temperature
+Burn Profile Classification: Classified motor pressure trace type (progressive, regressive, neutral, etc.) from experimental data trends
+Burn Rate vs. Pressure Calibration: Processed 9 static firing datasets of pressure–time traces, calculated rate-averaged pressure, and performed log–log regression to determine propellant burning rate parameters (a, n)
+Grain Geometry &amp; Nozzle Design: Designed propellant grain geometry and nozzle throat size to meet specified thrust requirements across multiple flight phases (Ignition, Max-Q, Sustain, Tailoff)
+Simulation &amp; Performance Validation: Modeled thrust and head-end pressure vs. time to verify compliance with customer specifications; established allowable burning rate tolerances to ensure thrust envelope is met
+
+Thermal &amp; Structural Analysis of Insulation Test Motor
+
+Internal Ballistics Simulation: Developed and applied custom ballistics code to calculate time-resolved pressures, gas velocities, and mass fluxes at multiple motor stations for an insulation test section.
+Structural Analysis: Determined case and dome wall thickness requirements using yield strength safety factor criteria; computed total case and dome mass
+Thermal Protection System Design: Identified critical insulation zones outside the test section, selected insulation materials, and provided justification based on thermal loads and fabrication considerations
+Nozzle Heat Transfer Modeling: Applied alternate Bartz equation to compute static temperature, wall recovery temperature, heat transfer coefficient, and heat flux distribution along nozzle cone at peak operating pressure
+CEA Data Integration: Incorporated NASA CEA output into performance and heat transfer models to obtain thermophysical properties and expansion characteristics for AP/Al/HTPB propellant
+">
+<meta name="author" content="Carrie Lai">
+<link rel="canonical" href="http://localhost:1313/rocket/solid-rocket/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/rocket/solid-rocket/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Carrie’s Portfolio (Alt + H)">Carrie’s Portfolio</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/plasma/" title="Plasma">
+                    <span>Plasma</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/ai-cfd/" title="AI &#43; CFD">
+                    <span>AI &#43; CFD</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/rocket/" title="Rocket">
+                    <span>Rocket</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/satellite/" title="Satellite">
+                    <span>Satellite</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/aircraft/" title="Aircraft">
+                    <span>Aircraft</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/additive-manufacturing/" title="Additive Manufacturing">
+                    <span>Additive Manufacturing</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      🚀 Solid Rocket Motor Modeling! Internal Ballistics
+    </h1>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Carrie Lai
+
+</div>
+  </header> 
+  <div class="post-content"><p>This project developed Python-based computational tools to model solid rocket motor ignition, burn dynamics, thermal loading, and structural performance. The work integrated thermochemistry from NASA CEA, internal ballistics, and heat transfer modeling to address both flight motor performance prediction and insulation test motor evaluation.</p>
+<h3 id="technical-contributions"><strong>Technical Contributions:</strong><a hidden class="anchor" aria-hidden="true" href="#technical-contributions">#</a></h3>
+<h3 id="motor-performance"><strong>Motor Performance</strong><a hidden class="anchor" aria-hidden="true" href="#motor-performance">#</a></h3>
+<ul>
+<li>Igniter Sizing &amp; Thermal Modeling: Computed minimum igniter mass to achieve &lt;50 ms ignition delay for ballistic test motors using thermal conduction equations, specific heat capacity, and target ignition surface temperature</li>
+<li>Burn Profile Classification: Classified motor pressure trace type (progressive, regressive, neutral, etc.) from experimental data trends</li>
+<li>Burn Rate vs. Pressure Calibration: Processed 9 static firing datasets of pressure–time traces, calculated rate-averaged pressure, and performed log–log regression to determine propellant burning rate parameters (a, n)</li>
+<li>Grain Geometry &amp; Nozzle Design: Designed propellant grain geometry and nozzle throat size to meet specified thrust requirements across multiple flight phases (Ignition, Max-Q, Sustain, Tailoff)</li>
+<li>Simulation &amp; Performance Validation: Modeled thrust and head-end pressure vs. time to verify compliance with customer specifications; established allowable burning rate tolerances to ensure thrust envelope is met</li>
+</ul>
+<h3 id="thermal--structural-analysis-of-insulation-test-motor"><strong>Thermal &amp; Structural Analysis of Insulation Test Motor</strong><a hidden class="anchor" aria-hidden="true" href="#thermal--structural-analysis-of-insulation-test-motor">#</a></h3>
+<ul>
+<li>Internal Ballistics Simulation: Developed and applied custom ballistics code to calculate time-resolved pressures, gas velocities, and mass fluxes at multiple motor stations for an insulation test section.</li>
+<li>Structural Analysis: Determined case and dome wall thickness requirements using yield strength safety factor criteria; computed total case and dome mass</li>
+<li>Thermal Protection System Design: Identified critical insulation zones outside the test section, selected insulation materials, and provided justification based on thermal loads and fabrication considerations</li>
+<li>Nozzle Heat Transfer Modeling: Applied alternate Bartz equation to compute static temperature, wall recovery temperature, heat transfer coefficient, and heat flux distribution along nozzle cone at peak operating pressure</li>
+<li>CEA Data Integration: Incorporated NASA CEA output into performance and heat transfer models to obtain thermophysical properties and expansion characteristics for AP/Al/HTPB propellant</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/aircraft/afsl/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Autonomous Flight Systems Lab</span>
+  </a>
+  <a class="next" href="http://localhost:1313/satellite/cubesat/">
+    <span class="title">Next »</span>
+    <br>
+    <span>2U &#43; 6U CubeSats</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Carrie’s Portfolio</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

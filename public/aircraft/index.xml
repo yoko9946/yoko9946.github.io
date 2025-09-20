@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Aircraft on Carrie’s Portfolio</title>
+    <link>http://localhost:1313/aircraft/</link>
+    <description>Recent content in Aircraft on Carrie’s Portfolio</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/aircraft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Electric Aircraft Project</title>
+      <link>http://localhost:1313/aircraft/ev/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aircraft/ev/</guid>
+      <description>Hybrid-electric distributed propulsion retrofit of a Cessna 310R, balancing sustainability, efficiency, and performance.</description>
+    </item>
+    <item>
+      <title>AIAA Design, Build and Fly Competition</title>
+      <link>http://localhost:1313/aircraft/dbf/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aircraft/dbf/</guid>
+      <description>Contributed to avionics development for a UAV in the AIAA DBF competition, focusing on flight control, motor selection, and sensor integration.</description>
+    </item>
+    <item>
+      <title>Autonomous Flight Systems Lab</title>
+      <link>http://localhost:1313/aircraft/afsl/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/aircraft/afsl/</guid>
+      <description>Research with Prof. Christopher Lum on nonlinear 6-DOF modeling, simulation, and flight visualization.</description>
+    </item>
+  </channel>
+</rss>

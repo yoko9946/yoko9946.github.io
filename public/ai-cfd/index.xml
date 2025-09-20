@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI &#43; CFD on Carrie’s Portfolio</title>
+    <link>http://localhost:1313/ai-cfd/</link>
+    <description>Recent content in AI &#43; CFD on Carrie’s Portfolio</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ai-cfd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI &#43; CFD!</title>
+      <link>http://localhost:1313/ai-cfd/cfd/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai-cfd/cfd/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;During this program, I gained hands-on experience in &lt;strong&gt;Computational Fluid Dynamics (CFD)&lt;/strong&gt;, spanning the fundamentals of PDEs, numerical methods, and solver development, and extending into parallel programming and AI-enhanced approaches. The curriculum provided both theoretical grounding and practical coding exercises.&lt;/p&gt;
+&lt;h2 id=&#34;learning-progression&#34;&gt;Learning Progression&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Python Foundations&lt;/strong&gt;&lt;br&gt;
+Reviewed Python basics and intermediate concepts as preparation for scientific programming.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CFD Fundamentals&lt;/strong&gt;&lt;br&gt;
+Explored governing equations (PDEs), the &lt;strong&gt;Finite Volume Method&lt;/strong&gt;, and grid generation techniques.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

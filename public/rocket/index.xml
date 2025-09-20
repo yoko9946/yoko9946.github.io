@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rockets on Carrie’s Portfolio</title>
+    <link>http://localhost:1313/rocket/</link>
+    <description>Recent content in Rockets on Carrie’s Portfolio</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/rocket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🚀 Solid Rocket Motor Modeling! Internal Ballistics</title>
+      <link>http://localhost:1313/rocket/solid-rocket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rocket/solid-rocket/</guid>
+      <description>&lt;p&gt;This project developed Python-based computational tools to model solid rocket motor ignition, burn dynamics, thermal loading, and structural performance. The work integrated thermochemistry from NASA CEA, internal ballistics, and heat transfer modeling to address both flight motor performance prediction and insulation test motor evaluation.&lt;/p&gt;
+&lt;h3 id=&#34;technical-contributions&#34;&gt;&lt;strong&gt;Technical Contributions:&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;motor-performance&#34;&gt;&lt;strong&gt;Motor Performance&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Igniter Sizing &amp;amp; Thermal Modeling: Computed minimum igniter mass to achieve &amp;lt;50 ms ignition delay for ballistic test motors using thermal conduction equations, specific heat capacity, and target ignition surface temperature&lt;/li&gt;
+&lt;li&gt;Burn Profile Classification: Classified motor pressure trace type (progressive, regressive, neutral, etc.) from experimental data trends&lt;/li&gt;
+&lt;li&gt;Burn Rate vs. Pressure Calibration: Processed 9 static firing datasets of pressure–time traces, calculated rate-averaged pressure, and performed log–log regression to determine propellant burning rate parameters (a, n)&lt;/li&gt;
+&lt;li&gt;Grain Geometry &amp;amp; Nozzle Design: Designed propellant grain geometry and nozzle throat size to meet specified thrust requirements across multiple flight phases (Ignition, Max-Q, Sustain, Tailoff)&lt;/li&gt;
+&lt;li&gt;Simulation &amp;amp; Performance Validation: Modeled thrust and head-end pressure vs. time to verify compliance with customer specifications; established allowable burning rate tolerances to ensure thrust envelope is met&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;thermal--structural-analysis-of-insulation-test-motor&#34;&gt;&lt;strong&gt;Thermal &amp;amp; Structural Analysis of Insulation Test Motor&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Internal Ballistics Simulation: Developed and applied custom ballistics code to calculate time-resolved pressures, gas velocities, and mass fluxes at multiple motor stations for an insulation test section.&lt;/li&gt;
+&lt;li&gt;Structural Analysis: Determined case and dome wall thickness requirements using yield strength safety factor criteria; computed total case and dome mass&lt;/li&gt;
+&lt;li&gt;Thermal Protection System Design: Identified critical insulation zones outside the test section, selected insulation materials, and provided justification based on thermal loads and fabrication considerations&lt;/li&gt;
+&lt;li&gt;Nozzle Heat Transfer Modeling: Applied alternate Bartz equation to compute static temperature, wall recovery temperature, heat transfer coefficient, and heat flux distribution along nozzle cone at peak operating pressure&lt;/li&gt;
+&lt;li&gt;CEA Data Integration: Incorporated NASA CEA output into performance and heat transfer models to obtain thermophysical properties and expansion characteristics for AP/Al/HTPB propellant&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
