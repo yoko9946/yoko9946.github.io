@@ -6,4 +6,4 @@ draft: false
 
 Here is my full resume in PDF form. You can view or download it below:
 
-[📄 Download Resume](/files/resume.pdf)
+[📄 Download my latest resume](/files/CarrieLai_resume25.pdf)
